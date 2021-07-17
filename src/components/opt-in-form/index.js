@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Input, Button, Text } from './styles/optInForm';
+import { Container, Input, Button, Text, Break } from './styles/optInForm';
 
 export default function OptInForm({ children, ...restOfProps }) {
     return (
@@ -24,5 +24,11 @@ OptInForm.Button = function OptInFormButton({ children, ...restOfProps }) {
 OptInForm.Text = function OptInFormText({ children, ...restOfProps }) {
     return (
         <Text {...restOfProps}>{children}</Text>
+    )
+}
+
+OptInForm.Break = function OptInFormBreak({ children, ...restOfProps }) {
+    return (
+        <Break {...restOfProps}>{children}</Break>
     )
 }
